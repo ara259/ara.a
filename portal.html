@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ara Portal</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: linear-gradient(180deg, #fff5f8, #fbe6ec);
+      font-family: 'Poppins', sans-serif;
+      text-align: center;
+      color: #b42e73;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* Logo – steady and clean */
+    .logo-icon img {
+  width: 300px; /* dati 120px or 150px — pwede mo lakihan dito */
+  height: auto;
+  object-fit: contain;
+  margin-bottom: 1px;
+  background: transparent;
+  box-shadow: none;
+}
+
+    }
+
+    h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 58px;
+      margin-bottom: 10px;
+      color: #d63384;
+      letter-spacing: 1px;
+      font-weight: 400;
+    }
+
+    p {
+      font-size: 14px;
+      color: #9c3c6a;
+      margin-bottom: 30px;
+    }
+
+    /* Buttons */
+    .btn {
+      display: block;
+      width: 280px;
+      margin: 12px auto;
+      padding: 12px 0;
+      border: 1px solid #d63384;
+      border-radius: 50px;
+      background: transparent;
+      color: #b42e73;
+      font-weight: 500;
+      font-size: 15px;
+      letter-spacing: 1px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #d63384;
+      color: white;
+    }
+
+    input {
+      display: block;
+      width: 280px;
+      margin: 10px auto;
+      padding: 12px 15px;
+      border: 1px solid #d63384;
+      border-radius: 50px;
+      outline: none;
+      text-align: center;
+      font-size: 15px;
+      color: #b42e73;
+      background: transparent;
+    }
+
+    input::placeholder {
+      color: #c46b93;
+    }
+
+    .small-text {
+      font-size: 12px;
+      margin-top: 15px;
+      color: #9c3c6a;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Steady logo, transparent background -->
+  <div class="logo-icon">
+    <img src="image/portal_logo2-removebg-preview.png" alt="Ara Logo">
+  </div>
+  <a href="#" class="btn">CREATE AN ACCOUNT</a>
+  <p>or</p>
+
+  <input type="email" placeholder="EMAIL ADDRESS">
+  <input type="password" placeholder="PASSWORD">
+  <button class="btn">LOG IN</button>
+
+  <p class="small-text">Forgot your password?</p>
+
+</body>
+</html>

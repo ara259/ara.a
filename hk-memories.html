@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HK Memories - Ara Arcega</title>
+  <link href="https://fonts.googleapis.com/css2?family=Parisienne&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      color: #fff;
+      background: url('ara-bg.jpeg') center/cover no-repeat fixed;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.3);
+      z-index: -1;
+    }
+
+    /* Navigation / Back button */
+    .back {
+      position: fixed;
+      top: 30px;
+      left: 40px;
+      text-decoration: none;
+      color: #fff;
+      background: rgba(255, 214, 224, 0.2);
+      border: 1px solid #ffd6e0;
+      padding: 8px 18px;
+      border-radius: 25px;
+      transition: 0.3s;
+    }
+
+    .back:hover {
+      background: #ffd6e0;
+      color: #000;
+    }
+
+    h1 {
+      font-family: "Parisienne", cursive;
+      font-size: 60px;
+      color: #ffd6e0;
+      text-align: center;
+      margin-top: 100px;
+      font-weight: 400;
+    }
+
+    /* Gallery layout */
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin: 50px auto;
+      max-width: 1000px;
+      padding: 0 20px;
+    }
+
+    .gallery img {
+      width: 250px;
+      height: 200px;
+      border-radius: 15px;
+      object-fit: cover;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 15px rgba(255, 182, 193, 0.5);
+    }
+
+    /* Footer (optional aesthetic touch) */
+    footer {
+      text-align: center;
+      color: #ffd6e0;
+      font-size: 14px;
+      margin-bottom: 30px;
+    }
+  </style>
+</head>
+<body>
+  <a href="about.html" class="back">← Back to Albums</a>
+
+  <h1>Hong Kong Memories</h1>
+
+  <div class="gallery">
+    <img src="image/hk1.JPG" alt="HK 1">
+    <img src="image/hk2.JPG" alt="HK 2">
+    <img src="image/IMG_1416.JPG" alt="HK 3">
+    <img src="image/IMG_1455.JPG" alt="HK 4">
+  </div>
+
+  <footer>© 2025 Ara Arcega | All Rights Reserved</footer>
+</body>
+</html>

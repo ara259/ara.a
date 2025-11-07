@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/portal_logo2-removebg-preview.png" href="image/portal_logo2-removebg-preview.png">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ara Arcega</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Parisienne&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      color: #fff;
+      background: url('image/ara.jpg.jpeg') center/cover no-repeat fixed;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.3);
+      z-index: -1;
+    }
+
+    /* Left-side social icons */
+    .socials {
+      position: fixed;
+      top: 50%;
+      left: 25px;
+      transform: translateY(-50%);
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      z-index: 10;
+    }
+
+    .socials a {
+      color: #ffb6c1;
+      font-size: 22px;
+      transition: 0.3s;
+    }
+
+    .socials a:hover {
+      color: #fff;
+      transform: scale(1.2);
+    }
+
+    /* Logo (top-left) */
+    .logo {
+      position: fixed;
+      top: 20px;
+      left: 80px;
+      font-family: "Parisienne", cursive;
+      font-size: 38px;
+      color: #ffd6e0;
+      font-weight: 400;
+      letter-spacing: 1px;
+    }
+
+    /* Navbar (top-right) */
+    nav {
+      position: fixed;
+      top: 20px;
+      right: 40px;
+      display: flex;
+      gap: 15px;
+      z-index: 10;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #fff;
+      background: rgba(255, 214, 224, 0.15);
+      border: 1px solid #ffd6e0;
+      padding: 8px 16px;
+      border-radius: 25px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      background: #ffd6e0;
+      color: #000;
+    }
+
+    /* Centered content */
+    .main-content {
+      text-align: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .main-content h1 {
+      font-family: "Parisienne", cursive;
+      font-size: 85px;
+      background: linear-gradient(90deg, #ffccd5, #ffb6c1, #ff99ac);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: 400;
+      margin-bottom: 10px;
+    }
+
+    .main-content p {
+      font-size: 18px;
+      color: #ffd6e0;
+      margin-bottom: 30px;
+      font-weight: 300;
+    }
+
+    .main-content .btn {
+      display: inline-block;
+      margin: 10px;
+      padding: 10px 25px;
+      border: 1px solid #ffd6e0;
+      border-radius: 25px;
+      color: #fff;
+      text-decoration: none;
+      background: rgba(255, 214, 224, 0.15);
+      transition: all 0.3s ease;
+    }
+
+    .main-content .btn:hover {
+      background: #ffd6e0;
+      color: #000;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Left side social icons -->
+  <div class="socials">
+    <a href="https://www.facebook.com/araaarcega/about" target="_blank"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://www.instagram.com/arcegaaraa/" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.threads.com/@arcegaaraa" target="_blank"><i class="fa-brands fa-threads"></i></a>
+    <a href="https://www.tiktok.com/@amandachanelcelecia"target="_blank"><i class="fab fa-tiktok"></i></a>
+   </div>
+
+  <!-- Logo -->
+  <div class="logo">Ara Arcega</div>
+
+  <!-- Navbar -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="shop.html">Shop</a>
+    <a href="contact.html">Contact</a>
+    <a href="portal.html">Portal</a>
+
+  </nav>
+
+  <!-- Centered Main Content -->
+  <div class="main-content">
+    <h1>Ara Arcega</h1>
+    <p>Welcome to my official page 🌸</p>
+    <a href="about.html" class="btn">View My Albums</a>
+    <a href="shop.html" class="btn">Visit My Shop</a>
+  </div>
+</body>
+</html>

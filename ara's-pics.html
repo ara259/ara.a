@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ara’s Pics</title>
+  <link href="https://fonts.googleapis.com/css2?family=Parisienne&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      text-align: center;
+      color: #fff;
+      background: url('ara-bg.jpeg') center/cover no-repeat fixed;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.3);
+      z-index: -1;
+    }
+
+    h1 {
+      font-family: "Parisienne", cursive;
+      font-size: 60px;
+      color: #ffd6e0;
+      margin-top: 100px;
+      font-weight: 400;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin: 50px auto;
+      max-width: 1000px;
+      padding: 0 20px;
+    }
+
+    .gallery img {
+      width: 250px;
+      height: 200px;
+      border-radius: 15px;
+      object-fit: cover;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 15px rgba(255, 182, 193, 0.5);
+    }
+
+    a.back {
+      display: inline-block;
+      margin-top: 30px;
+      text-decoration: none;
+      color: #fff;
+      background: rgba(255, 214, 224, 0.2);
+      border: 1px solid #ffd6e0;
+      padding: 10px 20px;
+      border-radius: 20px;
+      transition: 0.3s;
+    }
+
+    a.back:hover {
+      background: #ffd6e0;
+      color: #000;
+    }
+  </style>
+</head>
+<body>
+  <h1>📷 Ara’s Pics</h1>
+
+  <div class="gallery">
+    <img src="image/SXYN3332.JPG" alt="">
+    <img src="image/IMG_2548.JPG" alt="">
+    <img src="image/IMG_1139.JPG" alt="">
+  </div>
+
+  <a href="about.html" class="back">← Back to Albums</a>
+</body>
+</html>
